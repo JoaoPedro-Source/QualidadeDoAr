@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Aang | Qualidade do Ar</title>
+  <link href="{{url_for(static\)}}" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div id="doc3" class="yui-t7">
+  <div id="hd">
+    <div id="header">
+        <center>
+            <ul>
+                <a href="{{ url_for('cadastrar')}}">Adicionar</a>
+                <a href="{{ url_for('excluir')}}">Excluir</a>
+                <a href="{{ url_for('alterar')}}">Alterar</a>
+                <a href="{{ url_for('classificacao')}}">Classificar</a>
+            </ul>
+        </center>
+        <img src="../static/logo.png" alt="Logo Aang" width="170" height="170">
+        <h1>Artmosfera: Ambientação com Nitrogênio e Gás Oxigênio</h1>
+    </div>
+  </div>
+  </div>
+  <div id="bd">
+    <div id="yui-main">
+      <div class="yui-b">
+		<div class="yui-gc">
+          <div class="yui-u first">
+			<div class="content-cad">
+				<center><h2>Escolha a amostra e clique no botão para excluir.</h2></center>
+				<table class="content-table">
+					<thead>
+						<tr>
+							<th>Amostra</th>
+							<th>MP10</th>
+							<th>MP2,5</th>
+							<th>O3</th>
+							<th>CO</th>
+							<th>NO2</th>
+							<th>SO2</th>
+							<th>Média</th>
+						</tr>
+					</thead>
+					<tr>
+						<td>1</td>
+						<td>30</td>
+						<td>45</td>
+						<td>60</td>
+						<td>9</td>
+						<td>150</td>
+						<td>25</td>
+						<td>
+							<!--Tabela com todas as amostras do Banco -->
+							<text>{{ classificacao.qualidade_ar }}</text>
+						</td>
+					</tr>
+				</table>
+			</div>
+		  
+			<div class="content">
+				<center>
+					<h2>Média das Amostras</h2>
+				</center>
+				<hr>
+				<h4>Quantidade de Amostras: 1</h4> <!--Quantidades de amostra no bd-->
+				<text>Média Geral: {{ classificacao.qualidade_ar }}</text>
+				<hr>
+			</div>
+		  </div>
+		</div>
+	  </div>
+    </div>

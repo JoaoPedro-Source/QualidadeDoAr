@@ -1,0 +1,57 @@
+{%  extends  'base.html'  %}
+
+
+{%  block conteudo  %}
+		<img src="../static/logo.png" alt="Logo Aang" width="170" height="170">
+		<h1>Artmosfera: Excluir Amostras</h1>
+	</div>
+  </div>
+  <div id="bd">
+    <div id="yui-main">
+      <div class="yui-b">
+		  <div class="yui-gc">
+          <div class="yui-u first">
+			  <div class="content-cad">
+				<center><h2>Escolha a amostra e clique no botão para excluir.</h2></center>
+				<table class="content-table">
+					<thead>
+						<tr>
+							<th>Amostra</th>
+							<th>MP10</th>
+							<th>MP2,5</th>
+							<th>O3</th>
+							<th>CO</th>
+							<th>NO2</th>
+							<th>SO2</th>
+							<th>SELECIONAR</th>
+						</tr>
+					</thead>
+					<tr>
+						<td id="idexcluir">1</td> <!--Id para excluir a amostra-->
+						<td>30</td>
+						<td>45</td>
+						<td>60</td>
+						<td>9</td>
+						<td>150</td>
+						<td>25</td>
+						<td>
+							<!-- Adicionar action flask para chamar a funcao Excluir-->
+							<button type="submit" class="btn btn-default">EXCLUIR</button>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div class="yui-u">
+			<div class="content">
+				<center><h2>Excluir Amostra:</h2></center>
+				<hr>
+				<h4>ATENÇÃO!</h4>
+				<p>As amostras que forem excluídas não poderão ser recuperadas! Verifique se é a amostra correta com o código. Exclua somente em caso de necessidade, erros ou exceções.</p>
+				<hr>
+			</div>
+		</div>
+	</div>
+  </div>
+</div>
+{% endblock conteudo %}

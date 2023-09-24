@@ -1,0 +1,72 @@
+{%  extends  'base.html'  %}
+
+
+{%  block conteudo  %}
+		<img src="../static/logo.png" alt="Logo Aang" width="170" height="170">
+		<h1>Artmosfera: Alterar Amostras</h1>
+  </div>
+  <div id="bd">
+    <div id="yui-main">
+      <div class="yui-b">
+        <div class="yui-gc">
+          <div class="yui-u first">
+            <div class="content-cad">
+				<center><h2>Preencha os campos fazendo as alterações de valores das amostras: </h2></center>
+
+			<form class="formAdd">
+				
+				<h3>MP10:</h3>
+				<input id="text" type="text">
+				<br>
+				<h3>MP2,5:</h3>
+				<input id="text" type="text">
+				<br>
+				<h3>O3:</h3>
+				<input id="text" type="text">
+				<br>
+				<h3>CO:</h3>
+				<input id="text" type="text">
+				<br>
+				<h3>NO2:</h3>
+				<input id="text" type="text">
+				<br>
+				<h3>SO2:</h3>
+				<input id="text" type="text">
+				<br><br>
+				<center><button><h4>Alterar Amostra</h4></button>
+				<button><h4><a href="formAlterar.html">Cancelar</a></h4></button></center>
+			</form>
+			</div>
+          </div>
+          <div class="yui-u">
+            <div class="content-cad">
+				<center><h3>Valores cadastrados anteriormente: </h3>
+				<h3>Amostra: 1 </h3>
+				</center>
+				<hr>
+				<!-- Colocar id para os selectes do bd-->
+			    <h4>MP10: Partículas Inaláveis</h4> 
+					<text>Valor bd</text>
+				<hr>
+				<h4>MP2,5: Partículas Inaláveis Finas</h4>
+					<text>Valor bd</text>
+				<hr>
+				<h4>O3: Ozônio</h4> 
+					<text>Valor bd</text>
+				<hr>
+				<h4>CO: Monóxido de Carbono</h4>
+					<text>Valor bd</text>
+				<hr>
+				<h4>NO2: Dióxido de Nitrogênio</h4> 
+					<text>Valor bd</text>
+				<hr>
+				<h4>SO2: Dióxido de Enxofre</h4>
+					<text>Valor bd</text>
+				<hr>
+			</div>
+         </div>
+        </div>
+      </div>
+    </div>
+</div>
+{% endblock conteudo %}

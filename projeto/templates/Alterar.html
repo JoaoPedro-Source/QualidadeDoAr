@@ -1,0 +1,56 @@
+
+      <img src="../static/logo.png" alt="Logo Aang" width="170" height="170">
+      <h1>Artmosfera: Alterar Amostras</h1>
+    </div>
+  </div>
+  <div id="bd">
+    <div id="yui-main">
+      <div class="yui-b">
+        <div class="yui-gc">
+          <div class="yui-u first">
+            <div class="content-cad">
+              <center><h2>Escolha a amostra e altere os dados desejados.</h2></center>
+              <table class="content-table">
+                <thead>
+                  <tr>
+                    <th>Amostra</th>
+                    <th>MP10</th>
+                    <th>MP2,5</th>
+                    <th>O3</th>
+                    <th>CO</th>
+                    <th>NO2</th>
+                    <th>SO2</th>
+                    <th>SELECIONAR</th>
+                  </tr>
+                </thead>
+                <tr>
+                  <td id="idalterar">1</td> <!--Id para selecionar no flask-->
+                  <td>30</td>
+                  <td>45</td>
+                  <td>60</td>
+                  <td>9</td>
+                  <td>150</td>
+                  <td>25</td>
+                  <td>
+                    <button class="btn btn-default"><a href="Alterar.html">Alterar</a></button>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="yui-u">
+            <div class="content">
+              <center><h2>Informações Importantes:</h2></center>
+              <hr>
+              <h4>Alterando uma amostra:</h4> 
+              <p>Ao lado temos as informações de todas as amostras que estão cadastradas no sistema. Escolha a que deseja alterar e clique no botão que se encontra na mesma linha.</p>
+              <hr>
+              <h4>ATENÇÃO!</h4>
+              <p>Não altere as amostras com a intenção de falsificar, omitir ou esconder informações sobre os poluentes do ar.</p>
+              <hr>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+{% endblock conteudo %}
